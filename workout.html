@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plans | IntelliFit</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; color: #2c3e50; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .header h1 { color: #e67e22; font-size: 32px; }
+
+        .workout-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+
+        .workout-card {
+            background: white; flex: 1; min-width: 300px; padding: 25px;
+            border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-bottom: 8px solid #e67e22; transition: transform 0.3s;
+        }
+        .workout-card:hover { transform: translateY(-5px); }
+
+        /* Specific colors for categories */
+        .gain { border-bottom-color: #3498db; }
+        .maintain { border-bottom-color: #2ecc71; }
+        .loss { border-bottom-color: #e74c3c; }
+
+        h3 { text-align: center; font-size: 22px; }
+        .gain h3 { color: #3498db; }
+        .maintain h3 { color: #2ecc71; }
+        .loss h3 { color: #e74c3c; }
+
+        ul { padding-left: 10px; list-style-type: none; }
+        li { margin-bottom: 12px; padding: 10px; background: #f9f9f9; border-radius: 5px; border-left: 3px solid #ccc; }
+
+        .back-btn { display: block; width: 150px; margin: 40px auto; text-align: center; padding: 12px; background-color: #2c3e50; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>IntelliFit Workout Guide</h1>
+        <p>Training routines for every goal</p>
+    </div>
+
+    <div class="workout-grid">
+        <div class="workout-card gain">
+            <h3>💪 Muscle Gain</h3>
+            <ul>
+                <li><b>Pushups:</b> 3 Sets x 15 Reps</li>
+                <li><b>Squats:</b> 4 Sets x 12 Reps</li>
+                <li><b>Deadlifts:</b> Heavy lifting (once a week)</li>
+                <li><b>Rest:</b> 45-60 seconds between sets</li>
+            </ul>
+        </div>
+
+        <div class="workout-card maintain">
+            <h3>🏃 General Fitness</h3>
+            <ul>
+                <li><b>Brisk Walking:</b> 30 mins daily</li>
+                <li><b>Planks:</b> 3 Sets (60 seconds each)</li>
+                <li><b>Cycling:</b> 20 mins</li>
+                <li><b>Yoga:</b> 15 mins for flexibility</li>
+            </ul>
+        </div>
+
+        <div class="workout-card loss">
+            <h3>🔥 Weight Loss (HIIT)</h3>
+            <ul>
+                <li><b>Jumping Jacks:</b> 3 Sets x 50 Reps</li>
+                <li><b>Burpees:</b> 3 Sets x 10 Reps</li>
+                <li><b>Running:</b> 2-3 KM daily</li>
+                <li><b>Mountain Climbers:</b> 3 Sets x 30 Reps</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="/dashboard" class="back-btn">Back to Home</a>
+
+</body>
+</html>

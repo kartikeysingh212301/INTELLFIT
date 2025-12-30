@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Diet Plans | IntelliFit</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #2c3e50;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 { color: #2ecc71; font-size: 32px; }
+        .header p { color: #7f8c8d; }
+
+        /* Grid Layout for 3 Categories */
+        .diet-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .diet-card {
+            background: white;
+            flex: 1;
+            min-width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid #2ecc71;
+            transition: transform 0.3s;
+        }
+        .diet-card:hover { transform: translateY(-5px); }
+
+        /* Alag-alag color teeno ke liye */
+        .underweight { border-top-color: #3498db; }
+        .normal { border-top-color: #2ecc71; }
+        .overweight { border-top-color: #e67e22; }
+
+        h3 {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 0;
+        }
+        .underweight h3 { color: #3498db; }
+        .normal h3 { color: #2ecc71; }
+        .overweight h3 { color: #e67e22; }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: block;
+            width: 150px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 12px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>IntelliFit Diet Library</h1>
+        <p>Choose a plan that fits your current BMI status</p>
+    </div>
+
+    <div class="diet-grid">
+        <div class="diet-card underweight">
+            <h3>🔵 Underweight (Gain)</h3>
+            <p><strong>Goal:</strong> Healthy Weight Gain</p>
+            <ul>
+                <li>Drink smoothies & protein shakes.</li>
+                <li>Eat 5-6 smaller meals per day.</li>
+                <li>Include nuts, butter, & whole grains.</li>
+                <li>Add full-fat dairy to your diet.</li>
+            </ul>
+        </div>
+
+        <div class="diet-card normal">
+            <h3>🟢 Normal (Maintain)</h3>
+            <p><strong>Goal:</strong> Stay Fit & Healthy</p>
+            <ul>
+                <li>Balance proteins, carbs, & fats.</li>
+                <li>Stay hydrated (3-4L water/day).</li>
+                <li>Focus on fresh fruits & vegetables.</li>
+                <li>Limit processed sugar & junk food.</li>
+            </ul>
+        </div>
+
+        <div class="diet-card overweight">
+            <h3>🟠 Overweight (Loss)</h3>
+            <p><strong>Goal:</strong> Fat Loss & Energy</p>
+            <ul>
+                <li>High fiber foods (Salads, Beans).</li>
+                <li>Portion control (Eat in smaller plates).</li>
+                <li>Avoid sugary drinks & oily food.</li>
+                <li>Increase protein intake for muscle.</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="/dashboard" class="back-btn">Back to Home</a>
+
+</body>
+</html>
